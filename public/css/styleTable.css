@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    cursor: pointer;
+    position: relative;
+}
+
+.arrow {
+    font-size: 10px;
+    margin-left: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+th.sorted-up .arrow-up, 
+th.sorted-down .arrow.down {
+    opacity: 1;
+}
+
+th:hover .arrow {
+    opacity: 1;
+}

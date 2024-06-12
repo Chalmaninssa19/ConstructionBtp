@@ -1,0 +1,49 @@
+.relative-position {
+  position: relative;
+  height: 500px;
+  border: solid 1px lightgray;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.relative-position:hover {
+  transform: scale(1.05);
+}
+
+.relative-position .bouton-suppr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  float: right;
+  width: 30px;
+  transform: translate(15px, -15px);
+  height: 30px;
+  padding: 0 !important;
+  border-radius: 100% !important;
+}
+.relative-position .besoin-information {
+  position: absolute;
+  bottom: 15px;
+  left: 5%;
+  z-index: 10;
+}
+.relative-position .besoin-information p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.pdf-container {
+  overflow: hidden;
+  width: 100%;
+}
+.pdf-container .pdf-image-view {
+  margin: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+.same-height {
+  height: 40px !important;
+}

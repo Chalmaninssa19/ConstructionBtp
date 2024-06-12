@@ -1,0 +1,47 @@
+.relative-position {
+    position: relative;
+
+    .bouton-suppr {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        float: right;
+        width: 30px;
+        transform: translate(15px, -15px);
+        height: 30px;
+        padding: 0 !important;
+        border-radius: 100% !important;
+    }
+
+    .besoin-information {
+        position: absolute;
+        bottom: 15px;
+        left: 5%;
+        z-index: 10;
+
+        p {
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+}
+
+.pdf-container {
+    border: solid 1px lightgray;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+
+    .pdf-image-view {
+        width: 100%;
+        cursor: pointer;
+        height: 100%;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+}
